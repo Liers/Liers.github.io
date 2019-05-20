@@ -1,119 +1,153 @@
-<!DOCTYPE html>
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
-   <style type="text/css">
-      .words {
-    font-size: 150px;
-    font-family: 'Regular', cursive;
-    width: auto;
-    text-align: center;
-}
-   .days {
-    font-size: 216px;
-    font-family: 'Rye', cursive;
-    width: auto;
-    text-align: center;
-}
-.days-label {
-    font-size: 54px;
-}
-.seconds {
-    margin-top: 32px;
-    font-size: 32px;
-    font-family: "Monda_bo", Georgia, sans-serif;
-    width: auto;
-    text-align: center;
-}
-.seconds-label {
-     margin-top: 32px;
-    font-size: 32px;
-    font-family: "Monda_no", Georgia, sans-serif;
-    width: auto;
-    text-align: center; 
-}
-.container {
-    position: absolute;
-}
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus?">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+ 
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>a sea of flower</title>
+  </head>
+ 
+<style>
 @font-face {
-  font-family: 'Regular';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Rye Regular'), local('Rye-Regular'), url('./jscss/text1.ttf') format('woff');
+    font-family: 'AlexBrush-Regular';
+    src: url('AlexBrush-Regular-webfont.eot');
+    src: url('AlexBrush-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('AlexBrush-Regular-webfont.woff') format('woff'),
+         url('font/AlexBrush-Regular-webfont.ttf') format('truetype'),
+         url('AlexBrush-Regular-webfont.svg#AlexBrush-Regular') format('svg');
+    font-weight: bold;
+    font-style: normal;
 }
-@font-face {
-  font-family: 'Rye';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Rye Regular'), local('Rye-Regular'), url('./jscss/Clockopia.ttf') format('woff');
+body{
+	background: url(banner3.jpg);
+ 
 }
-@font-face {
-  font-family: 'Monda_no';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Monda'), local('Monda-Regular'), url('./jscss/Monda-Regular.ttf') format('truetype');
+.mainpic{
+	position: relative;
+	top:0px;
+	left:0px;
+    height:1920px; 
+    width:1080px;
+    padding: 0px;
+    margin:0px;
 }
-@font-face {
-  font-family: 'Monda_bo';
-  font-style: normal;
-  font-weight: bold;
-  src: local('Monda Bold'), local('Monda-Bold'), url('./jscss/Monda-Bold.ttf') format('truetype');
+.backg1{
+	position: absolute;
+	left: 29px;
+	top:182px;
+	width: 338px;
+	height: 342px;
 }
-   </style>
-    <meta http-equiv="X-UA-Compatible" content="IE=8"> 
-    <title>Since The Day</title> 
-   
-    <script src="./jscss/jquery-1.8.3.min.js" type="text/javascript"></script> 
-    <script type="text/javascript">
-    $(window).resize(function(){
-    console.log(parseInt(($(window).width() - $('.container').outerWidth())/2) + 'px');
-    $('.container').css({
-        position:'absolute',
-        left: ($(window).width() - $('.container').outerWidth())/2,
-        top: ($(window).height() - $('.container').outerHeight())/2
-    });
-    console.log($('.container').css('left'));
-});
-document.ready = function() {
-    $(window).resize();
-    updateNumbers();
-};
-function updateNumbers() {
-    //var start_time = 1253980800;
-    var beginTime = "2017-10-15 00:00:00";  
-    var start_time = Date.parse(beginTime)
-   // var start_time =  new Date("2014-11-11 10:10:10").Format("yyyy-MM-dd hh:mm:ss");
-    var duration = parseInt(Date.now()- start_time)/1000;
-    var seconds = parseInt( duration % 60);
-    if (seconds < 10)
-        seconds = "0" + seconds;
-    duration = parseInt(duration / 60);
-    var minutes = duration % 60;
-    if (minutes < 10)
-        minutes = "0" + minutes;
-    duration = parseInt(duration / 60);
-    var hours = duration % 24;
-    if (hours < 10)
-        hours = "0" + hours;
-    duration = parseInt(duration / 24);
-    var days = duration;
-    $('.days-number').text("" + days);
-    $('.seconds').text(hours + " hours " + minutes + " minutes " + seconds + " seconds");
-    setTimeout("updateNumbers()", 1000);
+.pattern1
+{
+	position: absolute;
+	left: 65.5px;
+	top:10px;
+	margin:0;
+	padding: 0;
 }
-</script> 
-    <!--[if lte IE 7]>
-    <script type="text/javascript" src="/static/js/degrade.js"></script>
-    <![endif]--> 
-  </head> 
-  <body style="background-color: #e7a3c1"> 
-    <div class="container" style="position: absolute; left: 482px; top: 181.5px;">
-      <div class="words"> 我爱你,月</div>
-      <div class="days">
-        <span class="days-number">1921</span>
-        <span class="days-label">days</span>
-      </div>
-      <div class="seconds">15 hours 24 minutes 30 seconds</div>
+.pattern2
+{
+	position: absolute;
+	left: 84px;
+	top:545px;
+	margin:0;
+	padding: 0;
+}
+ 
+.pattern3
+{
+	position: absolute;
+	left: 84px;
+	bottom:200px;
+	margin:0;
+	padding: 0;
+}
+.pattern4
+{
+	position: absolute;
+	left: 150px;
+	bottom:535px;
+	margin:0;
+	padding: 0;
+}
+.lettermystery{position: relative;top:681px; left:40px;width: 1000px;height: 475px;}
+.lettermystery p{
+	position: absolute; top:23px; left:1px; font-family: 'AlexBrush-Regular';font-size:1.5em;opacity: 0.3;color: #688099;
+}
+.Cname{
+position: absolute;width: 180px;height: 56px;right: 25px;bottom: 13px;margin:0px;padding: 0px;
+}
+.Cname p{
+}
+.connectway{
+	position: absolute;right: 25px;bottom: 37px;width: 184px;height: 14px;margin:0px;padding: 0px;
+}
+.connectway p{
+             font-size: 2.1em;
+}
+.fontsay span{
+	font-family:"宋体"; font-weight: bold; font-style:normal;
+}
+</style>
+  <body>
+ 
+  <div class="mainpic">
+ 
+    <div class="backg1">
+        <img src="grain.png" alt="">
     </div>
-   
-
-</body></html>
-
+ 
+    <div class="pattern1">
+        <img src="pattern/pattern1.png" alt="">
+    </div>
+ 
+    <div class="pattern2">
+ <img src="pattern/pattern2.png" alt="">
+    </div>
+ 
+    <div class="pattern3">
+        <img src="pattern/pattern3.png" alt="">
+    </div>
+ 
+    <div class="pattern4">
+        <img src="pattern/pattern4.png" alt="">
+    </div>
+    <div class="lettermystery">
+    <h1 style="font-family:'AlexBrush-Regular'">To:My beloved</h1>
+    <div class="fontsay" style="font-size: 1.9em; text-align: center; ">
+    <script type="text/javascript">
+  setTimeout("delay0.style.visibility='visible'",2000);
+</script>
+<a id="delay0"  style="visibility:hidden">_________________________</a><br/>
+   <script type="text/javascript">
+   setTimeout("delay1.style.visibility='visible'",3000);
+   </script>
+<a id="delay1"  style="visibility:hidden">_________________________</a><br/>
+   <script type="text/javascript">
+   setTimeout("delay2.style.visibility='visible'",4000);
+   </script>
+<a id="delay2"  style="visibility:hidden">_________________________</a><br/>
+<script type="text/javascript">
+   setTimeout("delay3.style.visibility='visible'",5000);
+   </script>
+<a id="delay3"  style="visibility:hidden">_________________________</a><br/>
+<script type="text/javascript">
+   setTimeout("delay4.style.visibility='visible'",6000);
+   </script>
+<a id="delay4"  style="visibility:hidden">_________________________</a><br/>
+<script type="text/javascript">
+   setTimeout("delay5.style.visibility='visible'",7000);
+   </script>
+    </div>
+      <div class="Cname"><h1 style="font-family:'AlexBrush-Regular'">from:krais</h1></div>
+      <div class="connectway"><p style="font-family:Times New Roman,Georgia,serif; color: #190000;opacity: 1;"></p></div>
+    </div>
+  </div>
+ 
+  </body>
+  </html>
