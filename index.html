@@ -1,0 +1,53 @@
+<body>
+ 
+	
+ 
+		<div class="login1">
+			<input type="text" name="username" id="uName"
+				style="width: 350px; height: 40px">
+		</div>
+ 
+		<div class="login2">
+			<input type="password" name="userpwd" id="uPass"
+				style="width: 350px; height: 40px">
+		</div>
+ 
+		<div class="button1">
+			<input type="button" value="登录"
+				style="width: 55px; height: 39px; background-color: #0066FF; color: #fff;" onclick="ulogin()">
+		</div>
+ 
+	
+ 
+<!-- 	</form> -->
+ 
+	<script language="javascript" type="text/javascript">
+		function ulogin() {
+		
+			var userName = document.getElementById("uName").value;
+			var userPass = document.getElementById("uPass").value;
+			
+			if (userPass == "root" && userName == "root") {
+				alert("登入成功");
+				<img src="image/1.jig">
+			} 
+			else if (userName == "" || userName == null) {
+				alert("用户名不能为空");
+				return false;
+			} 
+			else if (userPass == "" || userPass == null) {
+				alert("密码不能为空");
+				return false;
+			} 
+			else if (userPass != "root" || userName != "root") {
+				alert("用户名或密码错误");
+				return false;
+			} 
+			else{
+				return true;
+			}
+				
+		}
+	</script>
+ 
+</body>
