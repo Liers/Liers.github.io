@@ -2,9 +2,17 @@
 <html>
 <head>
 <title>L先生and奈奈女士的爱情</title>
+  <script>
+function copyText()
+{
+document.getElementById("field2").value=document.getElementById("field1").value;
+}
+</script>
 </head>
   
   <body>
- <img src="image/73fdfc039245d688630fdc0ea9c27d1ed21b240f.jpg"/>
+    Field1: <input type="text" id="field1" value="Hello World!"><br>
+Field2: <input type="text" id="field2"><br><br>
+ <button onclick="copyText()">登录</button>
   </body>
 </html>
